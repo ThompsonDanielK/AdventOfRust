@@ -18,7 +18,7 @@ fn main() {
 
     let puzzle_number = loop {
         print!("Please enter the puzzle number: ");
-        io::stdout().flush().unwrap(); // Ensure the prompt is displayed immediately
+        io::stdout().flush().unwrap();
         let mut input = String::new();
         io::stdin().read_line(&mut input).unwrap();
         match input.trim().parse::<usize>() {
