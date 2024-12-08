@@ -1,3 +1,4 @@
+pub mod puzzle_utils;
 pub mod puzzles;
 pub mod reader;
 pub mod writer;
@@ -42,6 +43,8 @@ fn main() {
 
     let result = match puzzle_number {
         1 => puzzles::puzzle_1::solve(text_contents),
+        2 => puzzles::puzzle_2::solve(text_contents),
+        3 => puzzles::puzzle_3::solve(text_contents),
         _ => {
             eprintln!("Error: Puzzle number {} is not valid.", puzzle_number);
             return;
